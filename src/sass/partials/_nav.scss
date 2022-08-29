@@ -10,6 +10,11 @@
 
 .navbar-brand img {
     max-height: 25px;
+    margin-right: 5px;
+}
+
+.navbar-toggler-icon {
+    max-width: 25px;
 }
 
 .nav-link {
@@ -32,6 +37,17 @@
     margin-top: 10px;
 }
 
+@media (min-width:420px) {
+    .navbar-brand img {
+        max-height: 40px;
+        margin-right: 10px;
+    }
+
+    .navbar-toggler-icon {
+        max-width: 30px;
+    }
+}
+
 @media (min-width:992px) {
     .navbar-collapse {
         margin-left: 0px;
@@ -43,7 +59,8 @@
     }
     
     .navbar-brand img {
-        max-height: 60px;
+        max-height: 50px;
+        margin-right: 10px;
     }
 }
 
