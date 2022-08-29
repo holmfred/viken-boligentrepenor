@@ -8,7 +8,7 @@ function NAV(){
                     <Navbar.Brand href="/"><img src={"../../images/viken_logo.png"} alt="logo"></img> Viken BOLIGENTREPENØR</Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
-                        <Nav className="mr-auto">
+                        <Nav className="ml-auto">
                             <NavLink to="/services" className="nav-link">
                                 Tjenester
                             </NavLink>
