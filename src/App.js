@@ -8,6 +8,7 @@ import Contact from "./components/contact/Contact";
 import References from "./components/references/References"
 import Services from "./components/services/Services"
 import About from "./components/about/About"
+import Footer from "./components/layout/Footer"
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
               <Route path="/contact" exact element={<Contact />} />
             </Routes>
           </Container>
+          <Footer />
       </Router>
   );
 }
