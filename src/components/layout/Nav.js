@@ -9,7 +9,7 @@ function NAV(){
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="mr-auto">
-                            <NavLink to="/" className="nav-link">
+                            <NavLink to="/services" className="nav-link">
                                 Tjenester
                             </NavLink>
                             <NavLink to="/references" className="nav-link">
