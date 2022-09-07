@@ -11,6 +11,7 @@
 .navbar-brand img {
     max-height: 25px;
     margin-right: 5px;
+    display: none;
 }
 
 .navbar-toggler-icon {
@@ -35,6 +36,17 @@
 .navbar-collapse {
     margin-left: 30px;
     margin-top: 10px;
+}
+
+@media (min-width:377px) {
+    .navbar-brand img {
+        display: flex;
+    }
+
+    .navbar-brand {
+        display: flex;
+        flex-direction: row;
+    }
 }
 
 @media (min-width:420px) {
