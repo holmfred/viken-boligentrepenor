@@ -181,6 +181,13 @@ Footer img {
   background-color: #fff;
 }
 
+.aboutUs,
+.partners,
+.reviews {
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
 .partners_img_container {
   display: -ms-grid;
   display: grid;
@@ -202,6 +209,25 @@ Footer img {
       justify-self: center;
 }
 
+.aboutUs img {
+  max-width: 300px;
+  border-radius: 20px;
+}
+
+.aboutUs-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20px;
+}
+
 @media (min-width: 650px) {
   .partners_img_container {
     -ms-grid-columns: (auto)[2];
@@ -213,6 +239,18 @@ Footer img {
   .carousel-indicators button {
     height: 25px !important;
     width: 25px !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .aboutUs-content {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .aboutUs-content p {
+    margin-right: 70px;
   }
 }
 

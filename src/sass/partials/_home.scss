@@ -27,6 +27,13 @@
     background-color: #fff;
 }
 
+.aboutUs, 
+.partners,
+.reviews {
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
 .partners_img_container {
     display: grid;
     grid-template-columns: repeat(1, auto);
@@ -43,6 +50,19 @@
     justify-self: center;
 }
 
+.aboutUs img {
+    max-width: 300px;
+    border-radius: 20px;
+}
+
+.aboutUs-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+
+}
+
 @media (min-width:650px) {
     .partners_img_container {
         grid-template-columns: repeat(2, auto);
@@ -53,5 +73,15 @@
     .carousel-indicators button {
         height: 25px !important;
         width: 25px !important;
+    }
+}
+
+@media (min-width:992px) {
+    .aboutUs-content {
+        flex-direction: row;
+    }
+    
+    .aboutUs-content p {
+        margin-right: 70px;
     }
 }
