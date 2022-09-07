@@ -72,15 +72,11 @@ a {
   }
 }
 
-html,
-body {
-  height: 100%;
-}
-
 body {
   background-image: url(../../../public/images/Background/concrete_seamless.png);
   background-repeat: repeat;
   margin: 0px;
+  height: 100vh;
 }
 
 footer {
@@ -101,6 +97,7 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: auto;
 }
 
 Footer img {
