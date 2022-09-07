@@ -1,9 +1,13 @@
 import Heading from "../layout/Heading";
+import HomeCarousel from "./HomeCarousel";
 
 export default function Home() {
  return (
-   <div className="container">
-   <Heading content="Home" />
-   </div>
+
+  <div>
+    <HomeCarousel/>
+    <Heading content="Home" />
+  </div>
+
  );
 }
