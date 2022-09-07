@@ -20,7 +20,7 @@
 
 .partners_img_container {
     display: grid;
-    grid-template-columns: repeat(2, auto);
+    grid-template-columns: repeat(1, auto);
     justify-content: space-evenly;
     margin-top: 50px;
     margin-bottom: 50px;
@@ -30,6 +30,14 @@
     max-width: 200px;
     max-height: 150px;
     border-radius: 20px;
+    margin-bottom: 20px;
+    justify-self: center;
+}
+
+@media (min-width:650px) {
+    .partners_img_container {
+        grid-template-columns: repeat(2, auto);
+    }
 }
 
 @media (min-width:768px) {
