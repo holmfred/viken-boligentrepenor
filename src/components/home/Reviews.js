@@ -2,7 +2,7 @@ import Heading from "../layout/Heading";
 
 function Reviews() {
   return (
-    <div>
+    <div className="reviews">
         <Heading content="Anmeldelser" />
     </div>
   )

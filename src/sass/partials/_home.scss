@@ -18,6 +18,15 @@
     opacity: 1.0 !important;
 }
 
+.aboutUs,
+.partners {
+    background-color: #E4E4E4;
+}
+
+.reviews {
+    background-color: #fff;
+}
+
 .partners_img_container {
     display: grid;
     grid-template-columns: repeat(1, auto);

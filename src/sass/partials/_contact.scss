@@ -1,0 +1,42 @@
+.contact-container {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    justify-content: center;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    background-color: #E4E4E4;
+    border-radius: 20px;
+    padding: 50px;
+}
+
+.mb-3 {
+    width: 300px;
+}
+
+@media (min-width:420px) {
+    .contact-mail-phone {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .mail {
+        width: 200px !important;
+    }
+    
+    .phone {
+        width: 180px !important;
+    }
+
+    .mb-3 {
+        width: 400px;
+    }
+}
+
+@media (min-width:992px) {
+    .contact-container {
+        grid-template-columns: repeat(2, auto);
+        justify-content: space-evenly;
+    }
+}
+

@@ -2,7 +2,7 @@ import Heading from "../layout/Heading";
 
 function AboutUs() {
   return (
-    <div>
+    <div className="aboutUs">
         <Heading content="Om Oss" />
     </div>
   )

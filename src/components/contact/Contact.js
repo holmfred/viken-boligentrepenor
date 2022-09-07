@@ -1,9 +1,11 @@
-import Heading from "../layout/Heading";
+import ContactForm from "./ContactForm";
+import ContactParagraph from "./ContactParagraph";
 
 export default function Contact() {
  return (
-   <div className="container">
-   <Heading content="Kontakt Oss" />
+   <div className="contact-container">
+   <ContactParagraph/>
+   <ContactForm />
    </div>
  );
 }
