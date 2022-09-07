@@ -18,6 +18,20 @@
     opacity: 1.0 !important;
 }
 
+.partners_img_container {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: space-evenly;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.partners_img_container img {
+    max-width: 200px;
+    max-height: 150px;
+    border-radius: 20px;
+}
+
 @media (min-width:768px) {
     .carousel-indicators button {
         height: 25px !important;

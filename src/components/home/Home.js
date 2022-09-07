@@ -1,12 +1,16 @@
-import Heading from "../layout/Heading";
+import AboutUs from "./AboutUs";
 import HomeCarousel from "./HomeCarousel";
+import Partners from "./Partners";
+import Reviews from "./Reviews";
 
 export default function Home() {
  return (
 
-  <div>
+  <div className="container">
     <HomeCarousel/>
-    <Heading content="Home" />
+    <AboutUs/>
+    <Reviews/>
+    <Partners/>
   </div>
 
  );
