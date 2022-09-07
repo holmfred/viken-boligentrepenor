@@ -9,8 +9,29 @@
     padding: 50px;
 }
 
+.contact-container-paragraph {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
 .mb-3 {
     width: 300px;
+}
+
+.contact-container-info {
+    margin-top: 20px;
+}
+
+.contact-container-info > * {
+    margin-top: -15px;
+}
+
+.contact-container-socialmedia {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
 }
 
 @media (min-width:420px) {
@@ -36,7 +57,10 @@
 @media (min-width:992px) {
     .contact-container {
         grid-template-columns: repeat(2, auto);
-        justify-content: space-evenly;
+    }
+        
+    .contact-container-paragraph {
+        margin-top: 110px;
+        margin-right: 50px;
     }
 }
-

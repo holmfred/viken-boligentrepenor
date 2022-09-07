@@ -39,7 +39,7 @@ function ContactForm() {
         <Form.Control as="textarea" rows={5} placeholder="Hva kan vi gjelpe deg med?" />
       </Form.Group>
       <Button variant="primary" type="submit">
-        Submit
+        Send Inn
       </Button>
     </Form>
   );
