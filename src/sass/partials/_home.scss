@@ -1,3 +1,7 @@
+.carousel-inner {
+    max-height: 500px;
+}
+
 .carousel-indicators button{
     background-color: #F79261 !important;
     border-radius: 100%;
@@ -18,7 +22,7 @@
     opacity: 1.0 !important;
 }
 
-.aboutUs,
+.home-aboutUs,
 .partners {
     background-color: #E4E4E4;
 }
@@ -27,7 +31,7 @@
     background-color: #fff;
 }
 
-.aboutUs, 
+.home-aboutUs, 
 .partners,
 .reviews {
     padding-top: 20px;
@@ -50,12 +54,12 @@
     justify-self: center;
 }
 
-.aboutUs img {
+.home-aboutUs img {
     max-width: 300px;
     border-radius: 20px;
 }
 
-.aboutUs-content {
+.home-aboutUs-content {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -77,11 +81,11 @@
 }
 
 @media (min-width:992px) {
-    .aboutUs-content {
+    .home-aboutUs-content {
         flex-direction: row;
     }
     
-    .aboutUs-content p {
+    .home-aboutUs-content p {
         margin-right: 70px;
     }
 }

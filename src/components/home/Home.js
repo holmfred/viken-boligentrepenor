@@ -1,4 +1,4 @@
-import AboutUs from "./AboutUs";
+import HomeAboutUs from "./HomeAboutUs";
 import HomeCarousel from "./HomeCarousel";
 import Partners from "./Partners";
 import Reviews from "./Reviews";
@@ -8,7 +8,7 @@ export default function Home() {
 
   <div className="home-container">
     <HomeCarousel/>
-    <AboutUs/>
+    <HomeAboutUs/>
     <Reviews/>
     <Partners/>
   </div>

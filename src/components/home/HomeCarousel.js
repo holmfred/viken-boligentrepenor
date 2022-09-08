@@ -6,7 +6,7 @@ function HomeCarousel() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="../../images/natre.png"
+          src="../../images/placeholder2-min.jpg"
           alt="Natre"
         />
         <Carousel.Caption>
@@ -17,7 +17,7 @@ function HomeCarousel() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="../../images/natre.png"
+          src="../../images/placeholder2-min.jpg"
           alt="Second slide"
         />
 
@@ -29,7 +29,7 @@ function HomeCarousel() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="../../images/natre.png"
+          src="../../images/placeholder2-min.jpg"
           alt="Third slide"
         />
 
