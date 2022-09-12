@@ -1,0 +1,21 @@
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+form p {
+    margin-bottom: -3px;
+}
+
+input {
+    border-radius: 8px;
+}
+
+button {
+    height: 40px;
+    border-radius: 10px;
+    margin-top: 20px;
+}

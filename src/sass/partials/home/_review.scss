@@ -1,0 +1,52 @@
+.review-container {
+    background-color: #fff;
+}
+
+.review-container-content {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+}
+
+.review {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    background-color: #E4E4E470;
+    border-radius: 20px;
+    border: 2px solid #00000075;
+    max-width: 400px;
+    margin: 0px auto;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.review p {
+    font-size: 15px !important;
+}
+
+.review img {
+    max-width: 50px;
+    align-self: center;
+    margin-right: 20px;
+}
+
+@media (min-width:768px) {
+    .review {
+        max-width: 600px;
+    }
+}
+
+@media (min-width:992px) {
+    .review-container-content {
+        grid-template-columns: repeat(2, auto);
+    }
+
+    .review {
+        max-width: 400px;
+    }
+}
+
+@media (min-width:1200px) {
+    .review {
+        max-width: 500px;
+    }
+}

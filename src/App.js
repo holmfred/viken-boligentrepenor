@@ -8,6 +8,8 @@ import Contact from "./components/contact/Contact";
 import References from "./components/references/References"
 import Services from "./components/services/Services"
 import About from "./components/about/About"
+import Login from "./components/login/Login";
+import Admin from "./components/admin/Admin";
 import Footer from "./components/layout/Footer"
 
 function App() {
@@ -21,6 +23,8 @@ function App() {
               <Route path="/references" exact element={<References />} />
               <Route path="/about" exact element={<About />} />
               <Route path="/contact" exact element={<Contact />} />
+              <Route path="/login" exact element={<Login />} />
+              <Route path="/admin" exact element={<Admin />} />
             </Routes>
           </Container>
           <Footer />

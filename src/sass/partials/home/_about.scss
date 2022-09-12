@@ -1,0 +1,23 @@
+.home-aboutUs img {
+    max-width: 300px;
+    border-radius: 20px;
+}
+
+.home-aboutUs-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+
+}
+
+
+@media (min-width:992px) {
+    .home-aboutUs-content {
+        flex-direction: row;
+    }
+    
+    .home-aboutUs-content p {
+        margin-right: 70px;
+    }
+}
