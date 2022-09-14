@@ -1,19 +1,19 @@
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
-import { NavLink, /* useNavigate */ } from "react-router-dom";
-/* import  AuthContext  from "../../context/AuthContext"
-import { useContext } from "react"; */
+import { NavLink, useNavigate } from "react-router-dom";
+import  AuthContext  from "../../context/AuthContext"
+import { useContext } from "react";
 
 
 function NAV(){
-    /* const [auth, setAuth] = useContext(AuthContext);
+    const [auth, setAuth] = useContext(AuthContext);
 
     const history = useNavigate();
 
     function logout() {
         setAuth(null);
         history("/")
-    } */
+    }
 
     return (
 
@@ -34,7 +34,7 @@ function NAV(){
                             <NavLink to="/contact" className="nav-link">
                                 Kontakt Oss
                             </NavLink>
-                            {/* {auth ? (
+                            {auth ? (
                                 <>
                                     |<NavLink to="/admin" className="nav-link">
                                         Admin
@@ -45,7 +45,7 @@ function NAV(){
                                 <NavLink to="/login" className="nav-link">
                                 Login
                                 </NavLink>
-                            )} */}
+                            )}
 
                         </Nav>
                     </Navbar.Collapse>
