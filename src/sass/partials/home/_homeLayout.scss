@@ -6,6 +6,13 @@
 .home-aboutUs, 
 .partners,
 .review-container {
-    padding-top: 20px;
-    padding-bottom: 40px;
+    padding: 30px;
+}
+
+@media (min-widht:768px) {
+    .home-aboutUs, 
+.partners,
+.review-container {
+    padding: 60px;
+}
 }

@@ -2,6 +2,17 @@
     max-height: 500px;
 }
 
+.carousel-caption {
+    background-color: #fff;
+    color: #F79261;
+    opacity: 0.7;
+    min-width: 517px;
+    margin-left: -78px;
+    margin-bottom: -20px;
+    max-height: 80px;
+    padding-bottom: 105px;
+}
+
 .carousel-indicators button{
     background-color: #F79261 !important;
     border-radius: 100%;
@@ -26,5 +37,45 @@
     .carousel-indicators button {
         height: 25px !important;
         width: 25px !important;
+    }
+
+    .carousel-caption {
+        min-width: 697px;
+        margin-left: -105px;
+        margin-bottom: 28px;
+        max-height: 80px;
+        padding-bottom: 110px;
+    }
+
+    .carousel-item img{
+        background-position-y: 150px;
+    }
+}
+
+@media (min-width:992px) {
+
+    .carousel-caption {
+        min-width: 937px;
+        margin-left: -140px;
+        margin-bottom: 217px;
+        padding-bottom: 115px;
+    }
+}
+
+@media (min-width:1200px) {
+
+    .carousel-caption {
+        min-width: 1117px;
+        margin-left: -168px;
+        margin-bottom: 359px;
+    }
+}
+
+@media (min-width:1400px) {
+
+    .carousel-caption {
+        min-width: 1297px;
+        margin-left: -195px;
+        margin-bottom: 500px;
     }
 }
