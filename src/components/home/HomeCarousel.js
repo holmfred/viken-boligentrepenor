@@ -10,7 +10,7 @@ function HomeCarousel() {
           alt="Terrasse"
         />
         <Carousel.Caption>
-          <h3>Terrasse</h3>
+          <h3>Terrasse 1</h3>
           <p>Tidligere Oppdrag</p>
         </Carousel.Caption>
       </Carousel.Item>
@@ -22,7 +22,7 @@ function HomeCarousel() {
         />
 
         <Carousel.Caption>
-          <h3>Terrasse</h3>
+          <h3>Terrasse 2</h3>
           <p>Tidligere Oppdrag</p>
         </Carousel.Caption>
       </Carousel.Item>
@@ -34,7 +34,7 @@ function HomeCarousel() {
         />
 
         <Carousel.Caption>
-          <h3>Terrasse</h3>
+          <h3>Terrasse 3</h3>
           <p>Tidligere Oppdrag</p>
         </Carousel.Caption>
       </Carousel.Item>
