@@ -11,6 +11,15 @@
 
 }
 
+.home-button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.home-button-container button {
+    width: 200px;
+}
+
 
 @media (min-width:992px) {
     .home-aboutUs-content {

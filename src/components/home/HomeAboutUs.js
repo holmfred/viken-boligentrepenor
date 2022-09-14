@@ -15,6 +15,9 @@ function HomeAboutUs() {
             </div>
             <img src="../../images/placeholder1-min.jpg" alt="Placeholder" />
         </div>
+        <div className="home-button-container">
+            <a href="/about"><button>Les mer</button></a>
+        </div>
     </div>
   )
 }
