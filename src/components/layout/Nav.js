@@ -3,7 +3,7 @@ import Nav from "react-bootstrap/Nav";
 import { NavLink, useNavigate } from "react-router-dom";
 import  AuthContext  from "../../context/AuthContext"
 import { useContext } from "react";
-
+import React from "react";
 
 function NAV(){
     const [auth, setAuth] = useContext(AuthContext);
