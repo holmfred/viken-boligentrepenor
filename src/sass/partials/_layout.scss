@@ -1,5 +1,11 @@
+#root {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
 body {
-    background-image: url(../../../public/images/Background/concrete_seamless.png);
+    background-image: url(../../../public/images/background/concrete_seamless.png);
     background-repeat: repeat;
     margin: 0px auto;
     height: 100vh;
@@ -10,5 +16,18 @@ body {
 button {
     color: #F79261 !important;
     background-color: #000 !important;
-    border: none !important
+    border: none !important;
+}
+
+.breadcrumb {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.breadcrumb-item a{
+    color: #F79261 !important;;
+}
+
+.breadcrumb-item.active {
+    color: #000 !important;
 }

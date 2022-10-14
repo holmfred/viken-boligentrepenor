@@ -1,0 +1,81 @@
+.edit-container {
+    background-color: #E4E4E4;
+    margin-top: 20px;
+    border-radius: 20px;
+    padding: 50px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.edit-button-container {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    justify-content: center;
+}
+
+.edit-button-container button {
+    width: 100px;
+    border-radius: 12px;
+    margin-top: 20px;
+}
+
+.edit-container textarea,
+.edit-container input {
+    width: 280px;
+
+}
+
+.success {
+	padding: 1rem;
+	margin: 10px 0;
+	background: green;
+	color: white;
+    border-radius: 20px;
+}
+
+
+@media (min-width:576px) {
+    .edit-container textarea,
+    .edit-container input {
+        width: 400px;
+    }
+}
+
+
+@media (min-width:768px) {
+    .edit-container textarea,
+    .edit-container input {
+        width: 600px;
+    }
+}
+
+@media (min-width:992px) {
+    
+    .edit-container textarea,
+    .edit-container input {
+        width: 800px;
+    }
+
+    .edit-button-container {
+        display: flex;
+        flex-direction: row;
+        gap: 100px;
+        justify-content: center;
+    }
+    
+    .edit-button-container button {
+        width: 200px;
+        border-radius: 12px;
+        margin-top: 20px;
+    }
+}
+
+@media (min-width:1400px) {
+    .edit-container textarea,
+    .edit-container input {
+        width: 1200px;
+    }
+}

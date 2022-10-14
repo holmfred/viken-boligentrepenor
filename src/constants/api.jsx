@@ -1,3 +1,11 @@
-export const BASE_URL = "/";
+export const BASE_URL = "https://servervikenbolig.com/wp-json/";
 export const TOKEN_PATH = "jwt-auth/v1/token";
-export const PAGES_PATH = "wp/v2/pages/"
+export const PAGES_PATH = "wp/v2/pages/";
+export const POSTS_PATH = "wp/v2/posts/";
+export const MEDIA_PATH = "wp/v2/media/";
+export const COMMENTS_PATH = "wp/v2/posts?categories=25";
+export const BATHROOM_PATH = "wp/v2/posts?categories=8";
+export const DOORS_PATH = "wp/v2/posts?categories=7";
+export const GARAGE_PATH = "wp/v2/posts?categories=26";
+export const REHAB_PATH = "wp/v2/posts?categories=9";
+export const OUTDOORS_PATH = "wp/v2/posts?categories=10";

@@ -1,0 +1,31 @@
+.add-container {
+    background-color: #E4E4E4;
+    margin-top: 20px;
+    border-radius: 20px;
+    padding: 50px;
+    margin-bottom: 20px;
+}
+
+.add-container input, 
+.add-container textarea {
+    width: 250px;
+    border-radius: 8px;
+}
+
+.add-btn {
+    width: 250px;
+    height: 40px;
+    margin-top: 10px !important;
+    display: flex;
+    justify-content: center;
+    margin: 0px auto;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+@media (min-width: 768px) {
+    .add-container input, 
+    .add-container textarea {
+        width: 500px;
+    }
+}

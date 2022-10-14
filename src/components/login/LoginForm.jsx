@@ -1,4 +1,4 @@
-/* import { useState } from "react";
+import { useState } from "react";
 import { useForm } from "react-hook-form";
 import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
@@ -31,7 +31,7 @@ export default function LoginForm() {
 		resolver: yupResolver(schema),
 	  });
 
-	const [auth, setAuth] = useContext(AuthContext);
+	const [, setAuth] = useContext(AuthContext);
 
 	async function onSubmit(data) {
 		setSubmitting(true);
@@ -54,11 +54,11 @@ export default function LoginForm() {
 
 	return (
 		<>
-			<form onSubmit={handleSubmit(onSubmit)}>
+		<form onSubmit={handleSubmit(onSubmit)}>
 				{loginError && <FormError>{loginError}</FormError>}
 				<fieldset disabled={submitting}>
 					<div>
-						<p>Username</p>
+						<p>Username/E-mail</p>
 						<input {...register("username", { required: true })} />
 						{errors.username && <FormError>{errors.username.message}</FormError>}
 					</div>
@@ -68,9 +68,9 @@ export default function LoginForm() {
 						<input type="password" {...register("password", { required: true })} />
 						{errors.password && <FormError>{errors.password.message}</FormError>}
 					</div>
-					<button>{submitting ? "Loggin in..." : "Login"}</button>
+					<button className="login-btn">{submitting ? "Loggin in..." : "Login"}</button>
 				</fieldset>
 			</form>
 		</>
 	);
-} */
+}

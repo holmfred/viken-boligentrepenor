@@ -7,11 +7,11 @@ export default function Footer() {
    </div>
    <div className="all-socials">
     <h5>Kontakt Oss:</h5>
-        <p><i class="fas fa-phone"></i>463 16 571</p>
-        <p><i class="fas fa-envelope"></i>post@vikenbe.as</p>
+        <p><i className="fas fa-phone"></i>463 16 571</p>
+        <p><i className="fas fa-envelope"></i>post@vikenbe.as</p>
         <div className="socials">
-            <a href="https://www.facebook.com/VikenBoligentreprenor" target="_blank" rel="noreferrer" class="fab fa-facebook"> </a>
-            <a href="https://www.instagram.com/vikenboligentreprenor/" target="_blank" rel="noreferrer" class="fab fa-instagram"> </a>
+            <a href="https://www.facebook.com/VikenBoligentreprenor" target="_blank" rel="noreferrer" className="fab fa-facebook"> </a>
+            <a href="https://www.instagram.com/vikenboligentreprenor/" target="_blank" rel="noreferrer" className="fab fa-instagram"> </a>
         </div>
    </div>
    </footer>

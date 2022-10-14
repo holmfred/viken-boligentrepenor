@@ -38,6 +38,7 @@
 @media (min-width:992px) {
     .review-container-content {
         grid-template-columns: repeat(2, auto);
+        gap: 100px;
     }
 
     .review {

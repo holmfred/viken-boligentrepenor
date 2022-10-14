@@ -17,6 +17,20 @@
 @media (min-width:650px) {
     .partners_img_container {
         grid-template-columns: repeat(2, auto);
+    }  
+}
+
+@media (min-width:1200px) {
+    .partners_img_container {
+        grid-template-columns: repeat(4, auto);
+    }
+
+}
+
+@media (min-width:1850px) {
+    .partners_img_container {
+        margin-left: 300px;
+        margin-right: 300px;
     }
 
 }

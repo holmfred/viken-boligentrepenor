@@ -1,0 +1,29 @@
+.admin-contact-container,
+.contact-detail-container  {
+    background-color: #E4E4E4;
+    margin-top: 20px;
+    border-radius: 20px;
+    padding: 50px;
+    margin-bottom: 20px;
+}
+
+.admin-contact-content-container,
+.contact-detail-content-container {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+
+@media (min-width:768px) {
+    .admin-contact-content-container {
+        grid-template-columns: repeat(2, auto);
+    }
+
+}
+
+@media (min-width:1400px) {
+    .admin-contact-content-container {
+        grid-template-columns: repeat(3, auto);
+    }
+}

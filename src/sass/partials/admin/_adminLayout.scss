@@ -1,0 +1,35 @@
+.admin-container {
+    background-color: #E4E4E4;
+    margin-top: 80px;
+    border-radius: 20px;
+    padding: 50px;
+    margin-bottom: 20px;
+}
+
+.admin-container-content > * {
+    max-width: 200px;
+}
+
+.admin-container .card-title {
+    height: 70px;
+}
+
+.admin-container-content {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    justify-content: center;
+    gap: 50px;
+    margin-top: 30px;
+}
+
+@media (min-width:768px) {
+    .admin-container-content {
+        grid-template-columns: repeat(2, auto);
+    }
+}
+
+@media (min-width:1400px) {
+    .admin-container-content {
+        grid-template-columns: repeat(3, auto);
+    }
+}

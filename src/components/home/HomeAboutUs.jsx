@@ -1,4 +1,6 @@
 import Heading from "../layout/Heading";
+import { Link } from "react-router-dom";
+import { Button } from "react-bootstrap";
 
 function HomeAboutUs() {
   return (
@@ -15,9 +17,7 @@ function HomeAboutUs() {
             </div>
             <img src="../../images/placeholder1-min.jpg" alt="Placeholder" />
         </div>
-        <div className="home-button-container">
-            <a href="/about"><button>Les mer</button></a>
-        </div>
+        <Link to={"/about"}><Button variant="primary" className="about-btn">Les mer</Button></Link>
     </div>
   )
 }

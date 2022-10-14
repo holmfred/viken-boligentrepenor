@@ -12,7 +12,7 @@ function NAV(){
 
     function logout() {
         setAuth(null);
-        history("/")
+        history("/");
     }
 
     return (
@@ -22,10 +22,10 @@ function NAV(){
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="mr-auto">
-                        <NavLink to="/services" className="nav-link">
+                            <NavLink to="/services" className="nav-link">
                                 Tjenester
                             </NavLink>
-                            <NavLink to="/references" className="nav-link">
+                            <NavLink to="/referencesPage" className="nav-link">
                                  Referanser
                             </NavLink>
                             <NavLink to="/about" className="nav-link">
@@ -36,10 +36,12 @@ function NAV(){
                             </NavLink>
                             {auth ? (
                                 <>
-                                    |<NavLink to="/admin" className="nav-link">
+                                    <NavLink to="/admin" className="nav-link">
                                         Admin
-                                    </NavLink> 
-                                    | <button onClick={logout} className="logout">Log Out</button>
+                                    </NavLink>
+                                    <div className="nav-btn-container">
+                                        <button onClick={logout} className="nav-btn">Log Out</button>
+                                    </div>
                                 </>
                             ) : (
                                 <NavLink to="/login" className="nav-link">

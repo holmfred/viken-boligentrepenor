@@ -1,48 +1,87 @@
-import Button from 'react-bootstrap/Button';
-import Form from 'react-bootstrap/Form';
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { useForm } from "react-hook-form";
+import * as yup from "yup";
+import { yupResolver } from "@hookform/resolvers/yup";
+import ValidationError from "../common/FormError";
+import useAxios from "../../hooks/useAxios";
+import { COMMENTS_PATH } from "../../constants/api";
 
-function ContactForm() {
-  return (
-    <Form>
-      <Form.Group className="mb-3" controlId="formBasicName">
-        <Form.Label>Navn</Form.Label>
-        <Form.Control type="name" placeholder="Ditt navn" />
-        <Form.Text className="text-muted">
-        </Form.Text>
-      </Form.Group>
+const schema = yup.object().shape({
+	title: yup.string().required("Title is required"),
+});
 
-      <div className='contact-mail-phone'>
-        <Form.Group className="mb-3 mail" controlId="formBasicEmail">
-            <Form.Label>E-post</Form.Label>
-            <Form.Control type="email" placeholder="Din e-post" />
-            <Form.Text className="text-muted">
-            </Form.Text>
-        </Form.Group>
+export default function AddPost() {
+	const [submitting, setSubmitting] = useState(false);
+	const [serverError, setServerError] = useState(null);
 
-        <Form.Group className="mb-3 phone" controlId="formBasicPhone">
-            <Form.Label>Telefonnummer</Form.Label>
-            <Form.Control type="phoneNumber" placeholder="Ditt telefonnummer" />
-            <Form.Text className="text-muted">
-            </Form.Text>
-        </Form.Group>
-      </div>
+	const history = useNavigate();
+	const http = useAxios();
 
-      <Form.Group className="mb-3" controlId="formBasicSubject">
-        <Form.Label>Emne</Form.Label>
-        <Form.Control type="subject" placeholder="Hva gjelder henvendelsen?" />
-        <Form.Text className="text-muted">
-        </Form.Text>
-      </Form.Group>
+	const { register, handleSubmit } = useForm({
+		resolver: yupResolver(schema),
+	});
 
-      <Form.Group className="mb-3" controlId="formBasicMessage">
-        <Form.Label>Melding</Form.Label>
-        <Form.Control as="textarea" rows={5} placeholder="Hva kan vi gjelpe deg med?" />
-      </Form.Group>
-      <Button variant="primary" type="submit">
-        Send Inn
-      </Button>
-    </Form>
-  );
-}
+	async function onSubmit(data) {
+		setSubmitting(true);
+		setServerError(null);
 
-export default ContactForm;
+		data.status = "publish";
+
+		if (data.featured_media === "") {
+			data.featured_media = null;
+		}
+
+		console.log(data);
+
+		try {
+			const response = await http.post(COMMENTS_PATH, data);
+			console.log("response", response.data);
+			history("/");
+		} catch (error) {
+			console.log("error", error);
+			setServerError(error.toString());
+		} finally {
+			setSubmitting(false);
+		}
+	}
+
+	return (
+			<form onSubmit={handleSubmit(onSubmit)}>
+				{serverError && <ValidationError>{serverError}</ValidationError>}
+				<fieldset disabled={submitting}>
+                    <div>
+                        <div>
+                            <p>Navn</p>
+                            <input name="title" type="text" placeholder="Ditt Navn"{...register("x_author", {required: true})}/>
+                        </div>
+
+                        <div className='contact-mail-phone'>
+                            <div className="email">
+                                <p>E-post</p>
+                                <input name="title" type="email" placeholder="Din e-post" {...register("content", {required: true})}/>
+                            </div>
+
+                            <div className="phone">
+                                <p>Telefonnummer</p>
+                                <input name="title" type="number" placeholder="Ditt telefonnummer"{...register("content", {required: true})}/>
+                            </div>
+                        </div>
+
+                        <div>
+                            <p>Emne</p>
+                            <input name="title" type="text" placeholder="Hva gjelder henvendelsen?"{...register("title", {required: true})}/>
+                        </div>
+
+                        <div>
+                            <p>Melding</p>
+                            <textarea  rows={6} name="content" type="text" placeholder="Hva kan vi hjelpe deg med?" {...register("content", {required: true})} />
+                        </div>
+                    </div>
+
+					<hr/>
+
+					<button className="add-btn">{submitting ? "Submitting..." : "Submit"}</button>
+				</fieldset>
+			</form>
+	)}

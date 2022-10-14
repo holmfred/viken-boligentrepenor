@@ -15,6 +15,22 @@
     text-align: center;
 }
 
+.contact-container input,
+.contact-container textarea {
+    border-radius: 8px;
+    width: 300px;
+    font-size: 20px;
+}
+
+.contact-container input {
+    height: 40px;
+}
+
+.contact-mail-phone input {
+    gap: 20px;
+    width: 300px;
+}
+
 .mb-3 {
     width: 300px;
 }
@@ -34,22 +50,37 @@
     justify-content: center;
 }
 
+.contact-btn {
+    width: 150px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    margin: 0px auto;
+    font-size: 20px;
+}
+
 @media (min-width:420px) {
+    .contact-mail-phone input {
+        display: flex;
+        gap: 20px !important;
+    }
+
+    .email input {
+        width: 200px !important;
+    }
+
+    .phone input {
+        width: 180px !important;
+    }
+
     .contact-mail-phone {
         display: flex;
         flex-direction: row;
         gap: 20px;
     }
 
-    .mail {
-        width: 200px !important;
-    }
-    
-    .phone {
-        width: 180px !important;
-    }
-
-    .mb-3 {
+    .contact-container input,
+    .contact-container textarea {
         width: 400px;
     }
 }
@@ -62,7 +93,20 @@
     }
         
     .contact-container-paragraph {
-        margin-top: 110px;
+        margin-top: 170px;
         margin-right: 50px;
+    }
+
+    .email input {
+        width: 250px !important;
+    }
+
+    .phone input {
+        width: 230px !important;
+    }
+
+    .contact-container input,
+    .contact-container textarea {
+        width: 500px;
     }
 }

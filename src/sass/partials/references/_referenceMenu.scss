@@ -1,0 +1,40 @@
+.reference-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    gap: 20px;
+    font-size: 20px;
+}
+
+.reference-menu >* {
+    background-image: url(../../../../public/images/background/nav_background.png);
+    color: #F79261;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.dropdown-item {
+    color: #F79261;
+}
+
+#dropdown-basic {
+    width: 160px;
+}
+
+@media (min-width:576px) {
+    .reference-menu {
+        margin-right: 65px;
+    }
+}
+
+@media (min-width:768px) {
+    .reference-menu {
+        margin-right: 5px;
+    }
+}
+
+@media (min-width:992px) {
+    .reference-menu {
+        margin-right: 85px;
+    }
+}
