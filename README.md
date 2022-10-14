@@ -50,4 +50,4 @@ If you'd like to get in contact me, this is where you'll do it!
 
 - [My LinkedIn page](https://www.linkedin.com/in/fredrik-s%C3%B8rlien-olsen-450b911b8/)
 - [My portfolio](https://www.fredriksolsen.com/)
-- Mail: fredrik1304@live.no
+- fredrik1304@live.no
